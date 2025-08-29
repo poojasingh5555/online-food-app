@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Paneer Tikka",
+    "description": "Marinated cottage cheese cubes grilled with spices and veggies.",
+    "image": "https://t4.ftcdn.net/jpg/10/76/33/75/360_F_1076337504_NNcAHDbQAm0Qn9Yl5AP1z3ynlGKsRdnM.jpg",
+    "price": { "half": 150, "full": 250 }
+  },
+  {
+    "name": "Chicken Biryani",
+    "description": "Aromatic basmati rice cooked with flavorful spices and tender chicken.",
+    "image": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmlyeWFuaXxlbnwwfHwwfHx8MA%3D%3D",
+    "price": { "half": 200, "full": 350 }
+  },
+  {
+    "name": "Veg Burger",
+    "description": "Crispy vegetable patty served in a soft bun with lettuce and sauces.",
+    "image": "https://media.istockphoto.com/id/1489417428/photo/crispy-aloo-tikki-burger.webp?a=1&b=1&s=612x612&w=0&k=20&c=FCi1GDnS38NCrQfEBx3nxRTuoITPesueZFkMkvhlyBI=",
+    "price": { "half": 80, "full": 150 }
+  },
+  {
+    "name": "Masala Dosa",
+    "description": "Crispy rice crepe stuffed with spicy potato filling, served with chutney & sambar.",
+    "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFzYWxhJTIwZG9zYXxlbnwwfHwwfHx8MA%3D%3D",
+    "price": { "half": 70, "full": 120 }
+  },
+  {
+    "name": "Chocolate Cake",
+    "description": "Rich and moist chocolate cake topped with creamy chocolate frosting.",
+    "image": "https://media.istockphoto.com/id/1330516411/photo/finger-millet-chocolate-cake-a-healthy-homemade-chocolate-cake-made-with-finger-millet-flour.webp?a=1&b=1&s=612x612&w=0&k=20&c=edd29gwmsuGcqk64OD9QZEWx6_tffmab-NZMDVK0kZ0=",
+    "price": { "half": 120, "full": 200 }
+  },
+  {
+    "name": "Butter Chicken",
+    "description": "Tender chicken cooked in a rich and creamy tomato-based gravy.",
+    "image": "https://media.istockphoto.com/id/2189610345/photo/flavorful-butter-chicken-in-a-bowl.jpg?s=612x612&w=0&k=20&c=77Tw-q7SnVMQRlXz4OEu6gdMnH46-xzQ-1P0CgC0Svc=",
+    "price": { "half": 220, "full": 400 }
+  },
+  {
+    "name": "Dal Makhani",
+    "description": "Slow-cooked black lentils with butter and cream, flavored with spices.",
+    "image": "https://media.istockphoto.com/id/1170374719/photo/dal-makhani-at-dark-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=FWHhW6SnrLvmwaR-APN3pIxEjLJe073-PQ0cfvOGoTI=",
+    "price": { "half": 120, "full": 200 }
+  },
+  {
+    "name": "Chole Bhature",
+    "description": "Spicy chickpeas served with deep-fried bread (bhature).",
+    "image": "https://media.istockphoto.com/id/1328524499/photo/katlambe-chole.webp?a=1&b=1&s=612x612&w=0&k=20&c=EPCKvlLn-1WeHHL_KL-60mkMjuD6p3BvI17YA8bfrC0=",
+    "price": { "half": 100, "full": 180 }
+  },
+  {
+    "name": "Pizza Margherita",
+    "description": "Classic Italian pizza with fresh tomatoes, mozzarella, and basil.",
+    "image": "https://media.istockphoto.com/id/157741539/photo/pizza-margherita.webp?a=1&b=1&s=612x612&w=0&k=20&c=USxxzSm78K3RUhBTPl5n3YN2mgAP7_tuoVKW3KKISLc=",
+    "price": { "half": 200, "full": 350 }
+  },
+  {
+    "name": "Fried Rice",
+    "description": "Stir-fried rice with vegetables and soy sauce.",
+    "image": "https://media.istockphoto.com/id/2181888429/photo/tasty-chow-mein-fried-rice-with-chicken-momos.webp?a=1&b=1&s=612x612&w=0&k=20&c=AbrbyfClJyJwrbVl6nRooKnlAMgl-2b7Y8ndbfZvq6M=",
+    "price": { "half": 90, "full": 150 }
+  },
+  {
+    "name": "Spring Rolls",
+    "description": "Crispy rolls stuffed with seasoned vegetables.",
+    "image": "https://media.istockphoto.com/id/2207965708/photo/deep-fried-spring-rolls-with-salad-as-an-appetizer.webp?a=1&b=1&s=612x612&w=0&k=20&c=0VVGkREbRTv73WGU10sey1AeDg3d6Vza06NQAprpbn8=",
+    "price": { "half": 80, "full": 140 }
+  },
+  {
+    "name": "Shahi Paneer",
+    "description": "Paneer cooked in a royal creamy cashew-based gravy.",
+    "image": "https://media.istockphoto.com/id/2212542625/photo/shahi-paneer-butter-masala.webp?a=1&b=1&s=612x612&w=0&k=20&c=RxxKJSciOKuaJ1wWrsjePL0z18fkFuRaS_xosaOY1cc=",
+    "price": { "half": 150, "full": 280 }
+  },
+  {
+    "name": "Fish Curry",
+    "description": "Spicy and tangy curry made with fresh fish.",
+    "image": "https://images.unsplash.com/photo-1654863404432-cac67587e25d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": { "half": 200, "full": 350 }
+  },
+  {
+    "name": "Tandoori Roti",
+    "description": "Traditional Indian bread baked in a clay oven.",
+    "image": "https://media.istockphoto.com/id/898273142/photo/assorted-indian-bread-basket-includes-chapati-tandoori-roti-or-naan-paratha-kulcha-fulka-missi.webp?a=1&b=1&s=612x612&w=0&k=20&c=XekcdT3j5YiRs4RfYRPnOEjPYurZKqWpyblPKJSJaLM=",
+    "price": { "half": 15, "full": 30 }
+  },
+  {
+    "name": "Gulab Jamun",
+    "description": "Soft fried milk balls soaked in sugar syrup.",
+    "image": "https://media.istockphoto.com/id/163064596/photo/gulab-jamun.webp?a=1&b=1&s=612x612&w=0&k=20&c=F_5_AgCdrsecO13W-wiuCZAwYZPBpN3UETTyYtQQlLM=",
+    "price": { "half": 60, "full": 100 }
+  },
+  {
+    "name": "Rajma Chawal",
+    "description": "Red kidney beans curry served with steamed rice.",
+    "image": "https://media.istockphoto.com/id/669635320/photo/kidney-bean-curry-or-rajma-or-rajmah-chawal-and-roti-typical-north-indian-main-course.webp?a=1&b=1&s=612x612&w=0&k=20&c=fQvk0ylYuRflBkPZ8aTUHwtcNkdeNqofVH9VjT4C2a0=",
+    "price": { "half": 100, "full": 180 }
+  },
+  {
+    "name": "Idli Sambar",
+    "description": "Steamed rice cakes served with lentil soup and chutneys.",
+    "image": "https://media.istockphoto.com/id/1195453105/photo/idli-with-sambar-and-coconut-chutney-on-blue-background-indian-dish-south-indian-favourite.webp?a=1&b=1&s=612x612&w=0&k=20&c=tylalfNGJpcJSI2jRz50sKQdSnvWSU6H8NcJyyb5jiU=",
+    "price": { "half": 70, "full": 120 }
+  },
+  {
+    "name": "Pav Bhaji",
+    "description": "Spicy mashed vegetable curry served with buttered bread.",
+    "image": "https://media.istockphoto.com/id/1327433011/photo/pav-bhaji-indian-street-food-bharuch-gujarat-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=wuk8_FqsHJwFTKvpAMt6iA7fsN0zROVmeSpJ9O9_cmE=",
+    "price": { "half": 80, "full": 150 }
+  },
+  {
+    "name": "Hakka Noodles",
+    "description": "Stir-fried noodles with vegetables and sauces.",
+    "image": "https://media.istockphoto.com/id/1159004213/photo/schezwan-noodles-with-vegetables-in-a-plate-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=1urIQ80xe_34IwgSMNhg4FJAYYGc53-38yT47NnLlEE=",
+    "price": { "half": 90, "full": 160 }
+  },
+  {
+    "name": "Ice Cream Sundae",
+    "description": "Creamy ice cream topped with fruits, nuts, and chocolate syrup.",
+    "image": "https://media.istockphoto.com/id/1456234806/photo/mango-ice-cream-served-in-cup-isolated-on-grey-background-top-view-of-indian-and-bangladesh.webp?a=1&b=1&s=612x612&w=0&k=20&c=-AMw3wM-DpIdEPuS58ZqV4BAd-VKTmN6tFUtmo1degg=",
+    "price": { "half": 100, "full": 180 }
+  }
+]

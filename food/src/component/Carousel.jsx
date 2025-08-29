@@ -1,0 +1,75 @@
+
+import React, { useState } from "react";
+
+const Carousel = ({setSearchQuery}) => {
+  const images = ["https://previews.123rf.com/images/yourapechkin/yourapechkin2411/yourapechkin241102496/238132195-a-charming-breakfast-of-baked-eggs-sliced-bread-and-fresh-tomatoes-on-a-rustic-wooden-table.jpg",
+   "https://previews.123rf.com/images/rez_art/rez_art2006/rez_art200600068/149699011-vietnamese-food-collage-with-beef-pho-and-bahn-mi.jpg",
+   "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGZhc3Rmb29kfGVufDB8fDB8fHww"
+
+   
+  ]
+   
+  const [current, setCurrent] = useState(0);
+  const [input,setInput] = useState("");
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? images.length - 1 : current - 1);
+  };
+
+  const nextSlide = () => {
+    setCurrent(current === images.length - 1 ? 0 : current + 1);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSearchQuery(input)
+
+  }
+
+  return (
+    <div className="relative w-[full] h-[700px] mx-auto overflow-hidden rounded-lg shadow-lg">
+      {/* Images */}
+      <img
+        src={images[current]}
+        alt="carousel"
+        className="w-full h-full object-cover transition-all duration-500"
+      />
+
+      {/* Left Button */}
+      <button
+        onClick={prevSlide}
+        className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/70 px-2 py-1 rounded-full shadow"
+      >
+        ⬅
+      </button>
+
+      {/* Right Button */}
+      <button
+        onClick={nextSlide}
+        className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/70 px-2 py-1 rounded-full shadow"
+      >
+        ➡
+      </button>
+      
+      <form onSubmit={handleSubmit} className="absolute bottom-8 left-1/2 -translate-x-1/2 flex bg-white/80 p-3 rounded-lg shadow-md w-2/3 max-w-6xl">
+  <input
+    type="search"
+    value={input}
+    onChange={(e)=> setInput(e.target.value)}
+    placeholder="Search..."
+    className="flex-grow px-3 py-2 rounded-l-lg border outline-none"
+  />
+  <button
+    type="submit"
+    className="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600"
+  >
+    Search
+  </button>
+</form>
+
+    </div>
+  );
+};
+
+export default Carousel;
+
+    
