@@ -1,15 +1,21 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useCart } from "./CartContext.jsx";
 
-const Navbar = ({ cart }) => {
+
+const Navbar = () => {
   const navigate = useNavigate();
-  const isLoggedIn = localStorage.getItem("authToken"); // check if user is logged in
+  const isLoggedIn = localStorage.getItem("authToken");
+  const {cart} = useCart()
+
 
   const handleLogout = () => {
-    localStorage.removeItem("authToken"); // remove token
+    localStorage.removeItem("authToken");
     alert("Logged out successfully!");
-    navigate("/signin"); // redirect to login
+    navigate("/signin");
   };
+
+
 
   return (
     <div className="shadow-md bg-green-400 dark:bg-gray-900 dark:text-white duration-200">
@@ -40,17 +46,22 @@ const Navbar = ({ cart }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/cart" className="inline-block py-4 px-6 hover:text-primary">
-                    Add to Cart ({cart?.length || 0})
+                  <Link to='/orders' className="inline-block py-4 px-6 hover:text-primary">Cart({cart.length})
                   </Link>
                 </li>
+                
+                
                 <li>
-                  <button
+                  
+                    <button
                     onClick={handleLogout}
-                    className="inline-block py-4 px-6 hover:text-primary"
+                    className="inline-block py-4 px-6 hover:text-primary "
                   >
                     Logout
                   </button>
+
+                
+                 
                 </li>
               </>
             ) : (

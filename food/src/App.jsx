@@ -1,40 +1,47 @@
-import { useState } from "react";
+import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Navbar from "./component/Navbar.jsx";
 import Home from "./pages/Home.jsx";
-import Signup from "./pages/SignUp.jsx";
-import Signin from "./pages/Signin.jsx";
-import Addtocart from "./pages/Addtocart.jsx";
+import Cart from "./component/Cart.jsx";
+import Footer from "./component/Footer.jsx";
+
+import ContactUs from "./pages/ContactUs.jsx";
+
+import SignIn from "./pages/Signin.jsx";
+import Signup from "./pages/Signup.jsx";
+
+
+
+
 
 function App() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [cart, setCart] = useState([]);
-
-  // Function to add item to cart
-  const addToCart = (food) => {
-    setCart((prev) => [...prev, food]); // Add new food to cart array
-  };
-
   const router = createBrowserRouter([
     {
       path: "/",
       element: (
         <>
-          <Navbar cartCount={cart.length} />
-          <Home
-            searchQuery={searchQuery}
-            setSearchQuery={setSearchQuery}
-            addToCart={addToCart}
-          />
+          <Navbar />
+          <Home />
         </>
       ),
+    },
+    {
+      path:"/orders",
+      element:(
+        <>
+        <Navbar/>
+        <Cart/>
+        </>
+      )
+
     },
     {
       path: "/signin",
       element: (
         <>
-          <Navbar cartCount={cart.length} />
-          <Signin />
+          <Navbar />
+          <SignIn />
         </>
       ),
     },
@@ -42,23 +49,28 @@ function App() {
       path: "/signup",
       element: (
         <>
-          <Navbar cartCount={cart.length} />
+          <Navbar />
           <Signup />
         </>
       ),
-    },
-    {
-      path: "/cart",
-      element: (
+    },{
+
+      path: "/contact",
+      element : (
         <>
-          <Navbar cartCount={cart.length} />
-          <Addtocart cart={cart} />
+        <Footer/>
+        <ContactUs/>
         </>
-      ),
-    },
+      )
+    }
+   
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+  
+      <RouterProvider router={router} />
+    
+  );
 }
 
 export default App;
