@@ -9,7 +9,7 @@ import Footer from "./component/Footer.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 
 import SignIn from "./pages/Signin.jsx";
-import Signup from "./pages/Signup.jsx";
+import Signup from "./pages/signup.jsx";
 
 
 

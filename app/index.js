@@ -1,37 +1,43 @@
-const express = require("express");
+import express from "express";
+import path from "path";
+import http from "http";
+import { Server } from "socket.io";
+import cors from "cors";
 
-const http = require('http');
-const {Server} = require("socket.io");
-const cors = require("cors");
-
+import connectDb from "./db.js";
+import router from "./routes/routing.js";
+import orderroute from "./routes/orderme.js";
 
 const app = express();
 const port = 5000;
+const __dirname = path.resolve(); // Node.js doesn't provide __dirname in ES modules, so we define it
 
-const connectDb = require("./db.js");
-const router = require("./routes/routing.js");
-const orderroute =  require("./routes/orderme.js");
-
-//crete http server
+// Create HTTP server
 const server = http.createServer(app);
-//attach socket.io
+
+// Attach socket.io
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // frontend URL
+    origin: "http://localhost:5173",
     methods: ["GET", "POST"],
   },
 });
-//middleware
+
+// Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//routes
+// Routes
 app.use("/api", router);
 app.use("/rest", orderroute);
-//connection
+
+// Connect DB
 connectDb();
 
+
+
+// Socket.io
 const onlineUsers = {};
 
 io.on("connection", (socket) => {
@@ -45,7 +51,7 @@ io.on("connection", (socket) => {
     console.log(`${role} joined: ${userId}`);
   });
 
-  // Private message between client and admin
+  // Private message
   socket.on("sendMessage", ({ senderId, receiverId, text }) => {
     const message = {
       senderId,
@@ -54,13 +60,11 @@ io.on("connection", (socket) => {
       time: new Date().toLocaleTimeString(),
     };
 
-    // Send to receiver if online
     const receiverSocketId = onlineUsers[receiverId];
     if (receiverSocketId) {
       io.to(receiverSocketId).emit("receiveMessage", message);
     }
 
-    // Send back to sender for immediate display
     socket.emit("receiveMessage", message);
   });
 
@@ -71,7 +75,7 @@ io.on("connection", (socket) => {
   });
 });
 
-
+// Start server
 server.listen(port, () => {
-  console.log(`server connected on ${port}`);
+  console.log(`Server running on port ${port}`);
 });
