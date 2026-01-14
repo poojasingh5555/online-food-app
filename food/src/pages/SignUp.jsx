@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const Signup = () => {
+const signup = () => {
   const [credentials, setCredentials] = useState({
     name: "",
     email: "",
@@ -144,5 +144,5 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default signup;
 
