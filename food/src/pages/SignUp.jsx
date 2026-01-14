@@ -14,7 +14,7 @@ const Signup = () => {
   e.preventDefault();
   try {
     // send user data to backend
-    const res = await axios.post("http://localhost:5000/api/user", credentials);
+    const res = await axios.post("https://online-food-app-csne.onrender.com/api/user", credentials);
 
     console.log("Backend response:", res.data);
 
