@@ -17,7 +17,7 @@ const Cart = () => {
         totalPrice: total,
         orderDate: new Date(),
       };
-       await axios.post("http://localhost:5000/rest/order", orderData);
+       await axios.post("https://online-food-app-csne.onrender.com/rest/order", orderData);
 
       alert(" Order placed successfully!");
       clearCart();
