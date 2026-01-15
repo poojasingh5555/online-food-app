@@ -8,7 +8,7 @@ import Footer from "./component/Footer.jsx";
 
 import ContactUs from "./pages/ContactUs.jsx";
 
-import SignIn from "./pages/Signin.jsx";
+import Signin from "./pages/signin.jsx";
 import Signup from "./pages/signup.jsx";
 
 
@@ -41,7 +41,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <SignIn />
+          <Signin />
         </>
       ),
     },
