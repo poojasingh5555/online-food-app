@@ -9,7 +9,7 @@ const Card = () => {
  
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/foodData")
+    fetch("https://online-food-app-csne.onrender.com/api/foodData")
       .then((res) => res.json())
       .then((data) => setFoods(data))
       .catch((err) => console.error("Error fetching foods:", err));
