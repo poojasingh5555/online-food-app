@@ -8,9 +8,8 @@ import Footer from "./component/Footer.jsx";
 
 import ContactUs from "./pages/ContactUs.jsx";
 
-import Signin from "./pages/signin.jsx";
-import Signup from "./pages/signup.jsx";
-
+import Login from "./pages/login.jsx";
+import Register from "./pages/register.jsx";
 
 
 
@@ -41,7 +40,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Signin />
+          <Login />
         </>
       ),
     },
@@ -50,7 +49,7 @@ function App() {
       element: (
         <>
           <Navbar />
-          <Signup />
+          <Register />
         </>
       ),
     },{

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const signin = () => {
+const login = () => {
   const [credentials, setcredentials] = useState({
     email: "",
     password: "",
@@ -160,4 +160,4 @@ const signin = () => {
   );
 };
 
-export default signin;
+export default login;
