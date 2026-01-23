@@ -17,7 +17,7 @@ import Register from "./pages/register.jsx";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/home",
       element: (
         <>
           <Navbar />
@@ -36,7 +36,7 @@ function App() {
 
     },
     {
-      path: "/signin",
+      path: "/",
       element: (
         <>
           <Navbar />

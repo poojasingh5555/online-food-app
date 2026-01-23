@@ -40,8 +40,22 @@ const Navbar = () => {
           <ul className="hidden sm:flex gap-4">
             {isLoggedIn ? (
               <>
-                <li>
+              <li>
                   <Link to="/" className="inline-block py-4 px-6 hover:text-primary">
+                    Sign In
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/signup" className="inline-block py-4 px-6 hover:text-primary">
+                    Sign Up
+                  </Link>
+                </li>
+              
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link to="/home" className="inline-block py-4 px-6 hover:text-primary">
                     Home
                   </Link>
                 </li>
@@ -62,19 +76,6 @@ const Navbar = () => {
 
                 
                  
-                </li>
-              </>
-            ) : (
-              <>
-                <li>
-                  <Link to="/signin" className="inline-block py-4 px-6 hover:text-primary">
-                    Sign In
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/signup" className="inline-block py-4 px-6 hover:text-primary">
-                    Sign Up
-                  </Link>
                 </li>
               </>
             )}

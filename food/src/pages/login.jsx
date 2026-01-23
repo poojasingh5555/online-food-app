@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { CartContext } from "../component/CartContext";
 
 const login = () => {
   const [credentials, setcredentials] = useState({
@@ -8,28 +9,22 @@ const login = () => {
     password: "",
   });
   let navigate = useNavigate();
+  const { login } = useContext(CartContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-     
+
     try {
       const res = await axios.post(
-        "https://online-food-app-csne.onrender.com/api/loginuser", credentials)
+        "https://online-food-app-csne.onrender.com/api/loginuser",
+        credentials,
+      );
 
-       
-      
-      
-      
-      console.log("Backened Response",res.data);
-      
+      console.log("Backened Response", res.data);
 
       if (res.data.success) {
-        alert("signin successful")
-        
-        localStorage.setItem("authToken", res.data.authToken);
-        
-         navigate("/");
-       
+        login(res.data.authToken);
+        navigate("/home");
       } else {
         alert("Enter valid credentials!");
       }
