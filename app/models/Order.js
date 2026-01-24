@@ -7,7 +7,7 @@ const orderSchema = new mongoose.Schema({
     qty: Number,
     price: Number
   }],
-  totalPrice: Number,
+  totalPrice: Number,  
   orderDate: Date,
 });
 
