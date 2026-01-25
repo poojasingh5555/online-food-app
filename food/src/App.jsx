@@ -8,8 +8,8 @@ import Footer from "./component/Footer.jsx";
 
 import ContactUs from "./pages/ContactUs.jsx";
 
-import Login from "./pages/login.jsx";
-import Register from "./pages/register.jsx";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
 
 
 

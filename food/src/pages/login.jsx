@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { CartContext } from "../component/CartContext";
+import {useAuth} from "./AuthContext"
 
-const login = () => {
+const Login = () => {
   const [credentials, setcredentials] = useState({
     email: "",
     password: "",
   });
   let navigate = useNavigate();
-  const { login } = useContext(CartContext);
+  const {login} = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -155,4 +155,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

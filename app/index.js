@@ -18,7 +18,11 @@ const server = http.createServer(app);
 // Attach socket.io
 const io = new Server(server, {
   cors: {
-    origin: "https://online-food-app-csne.onrender.com",
+    
+    origin: [ "http://localhost:5173",
+      "https://online-food-app-csne.onrender.com"
+      
+    ],
     methods: ["GET", "POST"],
   },
 });
